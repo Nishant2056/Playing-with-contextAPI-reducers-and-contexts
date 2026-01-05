@@ -45,7 +45,10 @@ const Counter = () => {
       <button
         type="button"
         style={{ marginLeft: "10px" }}
-        onClick={handleReset}
+        onClick={() => {
+          handleReset();
+          setPowerValue("");
+        }}
       >
         Reset
       </button>
